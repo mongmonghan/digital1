@@ -44,7 +44,10 @@
 		.smoke1{position:absolute; top:0px;left: 0px;z-index: -1;opacity: 0.5;}
 		.smoke2{position:absolute;top:650px;right: 0px;z-index: -1}
 		.earth {position:absolute; top:240px;left: 250px;z-index: 0;}
-		.earth2 {position:absolute; top:330px;left: 210px;z-index: 0;}
+		.earth2 {position:absolute; top:330px;left: 210px;z-index: 0;animation: ro3 60s infinite linear;animation-fill-mode: both;z-index:0}
+		@keyframes ro3{
+			to{transform:rotate(360deg);}}
+
 		.clock {position:absolute;top:1230px;right: 110px;z-index: 0;}
 		.clock2 {position:absolute;top:1900px;left: 115px;z-index: 0;}
 		.clock3 {position:absolute;top:1900px;left: 480px;z-index: 0;}
@@ -79,16 +82,22 @@
 		.footer {z-index: 1;  position: relative; height:300px;}
 
 		.lundon1 {position:absolute;top:260px;left:120px;}
+		.lundon1:hover {opacity: 0;transition: all 1s;}
 		.lundon2 {position:absolute;top:260px;left:120px;}
 		.chunsic1 {position:absolute;top:1200px;right:120px;}
+		.chunsic1:hover {opacity: 0;transition: all 1s;}
 		.chunsic2 {position:absolute;top:1200px;right:120px;}
 		.lovecanel1 {position:absolute;top:260px;left:120px;}
+		.lovecanel1:hover {opacity: 0;transition: all 1s;}
 		.lovecanel2 {position:absolute;top:260px;left:120px;}
 		.gold1 {position:absolute;top:1200px;right:120px;}
+		.gold1:hover {opacity: 0;transition: all 1s;}
 		.gold2 {position:absolute;top:1200px;right:120px;}
 		.oil1 {position:absolute;top:260px;left:120px;}
+		.oil1:hover {opacity: 0;transition: all 1s;}
 		.oil2 {position:absolute;top:260px;left:120px;}
 		.river1 {position:absolute;top:1200px;right:120px;}
+		.river1:hover {opacity: 0;transition: all 1s;}
 		.river2 {position:absolute;top:1200px;right:120px;}
 
 		.day h1{text-align: center;color: white;font-size: 46px;line-height: 0.9em;padding-top:180px}
@@ -145,30 +154,34 @@
 
 <wrap class="mid">
 	<section id="sec1" class="sec1">
-		<img src="lundon1.jpg" class="lundon1">
+		
 		<img src="lundon2.jpg" class="lundon2">
+		<img src="lundon1.jpg" class="lundon1">
 		<h1 class="lefth1"> 런던 스모그 사건 </h1>
 		<p class="leftp">고기압이 영국 상공을 계속 덮고 있자 지상에<br>가까운 대기에는 찬 공기가 빠져나가지<br>못하고 대기오염 물질도 고여 있게 되었다.<br>
 		1952년 영국 런던에서 최악의 스모그가<br>있었던 4일이 지나간 후 약 3주 동안에<br>집계한 바에 따르면 4,000여 명이 사망했고,<br>1년 동안 8000명이 더 발생하였다.</p>
 		<h2 class="h21"> 1년간 12,000명 이상 사망</h2>
 
-		<img src="chunsic1.jpg" class="chunsic1">
+		
 		<img src="chunsic2.jpg" class="chunsic2">
+		<img src="chunsic1.jpg" class="chunsic1">
 		<h1 class="righth1"> 욧카이치 천식 사건 </h1>
 		<p class="rightp">욧카이치에 석유화학공장이 들어섰으며<br>공장 가동 직후부터 주민들은 각종 호흡기<br>질환을 겪었는데, 이러한 상황에서도<br>공장가동은 중단되지 않았고 대기는 계속<br>악화되어갔다. 이때 오염지역의 이산화황<br>농도는 오염이 안된 지역의 8배 이상이었다.</p>
 		<h2 class="h22"> 피해자 총 1231명<br>80여 명 사망</h2>
 	</section>
 
 	<section id="sec2" class="sec2">
-		<img src="lovecanel1.jpg" class="lovecanel1">
+		
 		<img src="lovecanel2.jpg" class="lovecanel2">
+		<img src="lovecanel1.jpg" class="lovecanel1">
 		<h1 class="lefth1"> 러브 커넬 사건 </h1>
 		<p class="leftp">1978년 화학 회사가 10년 동안 땅에 묻은<br>유독성 폐기물 때문에 미국의 러브커넬은<br>환경 재난 지역으로 선포되고, 폐쇄되었다.<br>지역 주민들에게 피부병이나 만성 천식,<br>심장질환, 뇌종양, 기형아 등이 나타났다.<br>약 3000억 원의 환경 사업에 나섰으나<br>
 		70년이 넘는 복구 작업에도 여전히<br>유해물질이 검출되고 있다.</p>
 		<h2 class="h23"> 70년 이상 복구 진행중</h2>
 
-		<img src="gold1.jpg" class="gold1">
+		
 		<img src="gold2.jpg" class="gold2">
+		<img src="gold1.jpg" class="gold1">
 		<h1 class="righth1"> 알라모골드 사건 </h1>
 		<p class="rightp">한 농가가 사육하는 돼지에게 곡물찌꺼기를<br>먹였는데, 돼지 14마리가 실명하고 이 중 <br>12마리는 죽었다. 이후 3명의 어린아이가<br>실명했는데, 조사결과 곡물저장창고에<br>수은이 함유된 파노젠이라는 농역이<br>투여되었었다는 것이 밝혀졌다.<br> 
 		그러나 직접적인 증거가 없다는 이유로<br>수은계 농약 시판은 허용되고 있다.</p>
@@ -176,14 +189,16 @@
 	</section>
 
 	<section id="sec3" class="sec3">
-		<img src="oil1.jpg" class="oil1">
+		
 		<img src="oil2.jpg" class="oil2">
+		<img src="oil1.jpg" class="oil1">
 		<h1 class="lefth1"> 태안 원유 유출 사건 </h1>
 		<p class="leftp">2007년 우리나라 태안 앞바다에서 유조선과<br>크레인이 충돌하였다. 이로 인해 12,547㎘의<br>기름이 바다로 흘러들어 바다가 오염되었다.<br>집계된 폐기물 수거량은 폐유 4,175㎘와<br>흡착폐기물 3만 2074톤이었으며 육상에<br>동원된 인력은 총 2,132,322명으로 이 중<br>자원봉사자가 1,226,730명에 달한다.</p>
 		<h2 class="h25"> 원유 12,547㎘ 바다에 유출</h2>
 
-		<img src="river1.jpg" class="river1">
+		
 		<img src="river2.jpg" class="river2">
+		<img src="river1.jpg" class="river1">
 		<h1 class="righth1"> 제임스강 오염 사건 </h1>
 		<p class="rightp">라이프사이언스라는 공장에서 제조하는<br>키폰이라는 유독성 살충제 때문에 직원의<br>절반이 질병에 시달려 보건당국이<br>공장폐쇄와 키폰 판매 금지를 명하였고, 공장<br>측은 남아있던 살충제를 모두 하수구에<br>버렸다. 이로 인해 제임스강은 죽음의 강으로<br>변하였고 정화를 위한 많은 노력에도 <br>불구하고 지금도 퇴적물에서 검출되고 있다.</p>
 		<h2 class="h26"> 하류 100km 생명 생존불가</h2>
